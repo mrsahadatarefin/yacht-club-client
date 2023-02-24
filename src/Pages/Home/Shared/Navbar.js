@@ -4,10 +4,11 @@ import logo from '../../../assets/banner/logo.png'
 
 const Navbar = () => {
     const navMenu = <React.Fragment>
-         <li><Link to='/' className='font-bold'> Home</Link></li>
-         <li><Link to='/about-Us' className='font-bold'> About Us</Link></li>
-         <li><Link to='/Blog' className='font-bold'> Blog</Link></li>
-         <li><Link to='/contacts' className='font-bold'> Contacts</Link></li>
+         <li><Link to='/' className='font-bold  text-xl'> Home</Link></li>
+         <li><Link to='/services' className='font-bold  text-xl'> Services</Link></li>
+         <li><Link to='/about-Us' className='font-bold  text-xl'> About Us</Link></li>
+         <li><Link to='/Blog' className='font-bold  text-xl'> Blog</Link></li>
+         <li><Link to='/contacts' className='font-bold  text-xl'> Contacts</Link></li>
          
 
     </React.Fragment>
@@ -27,7 +28,7 @@ const Navbar = () => {
         {navMenu}
       </ul>
     </div>
-    <Link to='/' className=" normal-case text-2xl  font-bold italic    "><img src={logo} alt='' className='w-20 h-20 '/></Link >
+    <Link to='/' className=" normal-case text-2xl  font-bold italic     "><img src={logo} alt='' className='w-20 h-20 '/></Link >
   </div>
   <div className="navbar-end hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
