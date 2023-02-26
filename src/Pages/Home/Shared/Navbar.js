@@ -18,13 +18,14 @@ const Navbar = () => {
          <li><Link to='/' className='  text-xl'> Home</Link></li>
          <li><Link to='/services' className='  text-xl'> Services</Link></li>
          <li><Link to='/aboutUs' className='  text-xl'> About Us</Link></li>
-         <li><Link to='/Blog' className='  text-xl'> Blog</Link></li>
+         <li><Link to='/blog' className='  text-xl'> Blog</Link></li>
          <li><Link to='/contact' className='  text-xl'> Contacts</Link></li>
          {
           
           user?.uid?
           
           <>
+          <li><Link to ='/myReviews' className='text-xl'> My reviews</Link> </li>
           <li><Link to ='/addService' className='text-xl'>Add service</Link> </li>
           <li>  <Link  className='  text-xl' onClick={handleLogout}> logout</Link></li>
           </>

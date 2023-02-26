@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { useLoaderData } from 'react-router-dom';
+import { AuthContext } from '../../Context/ContextProvider/ContextProvider';
+import AddReview from '../AddReview/AddReview';
+import Reviews from '../Reviews/Reviews';
 
 const ServiceDetails = () => {
+  const {user}=useContext(AuthContext)
     const serviceDetail = useLoaderData()
     const{img,yacht_name,description,price,Capacity,Water_area,_id,Point_of_departure,Onboard_facilities}=serviceDetail
     
     return (
-        <div className="  bg-base-100 shadow-xl mt-20  max-w-[1440px] m-auto ">
- <PhotoProvider>
+        <div className="   mt-20  max-w-[1440px] m-auto ">
+          <div className="  bg-base-100 shadow-xl mt-20">
+          <PhotoProvider>
     <PhotoView  src={img}>
     <img src={img} className='h-[600px] w-full p-5 ' alt="Shoes" />
     </PhotoView>
@@ -23,6 +28,20 @@ const ServiceDetails = () => {
     
     
     
+  </div>
+
+          </div>
+ 
+  <div className=' '>
+    
+    <Reviews></Reviews>
+
+    
+
+  </div>
+
+  <div>
+    <AddReview></AddReview>
   </div>
 </div>
     );

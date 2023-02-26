@@ -1,9 +1,11 @@
 import About from "../Pages/AboutUs/About";
 import AddService from "../Pages/AddService/AddService";
+import Blog from "../Pages/Blog/Blog";
 import Contact from "../Pages/Contact/Contact";
 import Home from "../Pages/Home/Home";
 import Services from "../Pages/Home/Services/Services";
 import Login from "../Pages/Login/Login";
+import MyReviews from "../Pages/Myreviews/MyReviews";
 import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 import SignUp from "../Pages/SignUp/SignUp";
 import YachtServices from "../Pages/YachtServices/YachtServices";
@@ -42,6 +44,10 @@ export const router = createBrowserRouter([
       path:'/addService',
       element:<PrivateRoute><AddService></AddService></PrivateRoute>
     },
+    {
+path:'/myReviews',
+ element:<PrivateRoute><MyReviews></MyReviews> </PrivateRoute>
+    },
     
     {
       path:'/contact',
@@ -50,6 +56,10 @@ export const router = createBrowserRouter([
     {
       path:'/aboutUs',
       element:<About></About>
+    },
+    {
+      path:'/blog',
+      element:<Blog></Blog>
     },
 
     

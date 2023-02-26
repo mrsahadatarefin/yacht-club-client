@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 
 
 const AddService = () => {
-    const imageHostKey = process.env.REACT_APP_imageBB_key;
+    // const imageHostKey = process.env.REACT_APP_imageBB_key;
     const { handleSubmit, register,formState:{errors} } = useForm();
    
    
@@ -16,7 +16,7 @@ const handleAddService = data =>{
 const image = data.image[0];
 const formData = new FormData();
 formData.append('image', image);
- const url = `https://api.imgbb.com/1/upload?expiration=600&key=${imageHostKey}`;
+ const url = 'https://api.imgbb.com/1/upload?expiration=600&key=aa28514066e54d1a382e1e6e77dc0b55}';
 fetch(url,{
     method:'POST',
     body:formData
@@ -30,7 +30,7 @@ fetch(url,{
     return (
         
         <div className="  flex justify-center items-center">
-        <div className="w-96 p-7">
+        <div className="w-96 bg-[#f8ecef] rounded-lg p-7">
           <h2 className="text-5xl text-center pt-20 font-bold">Add service</h2>
           <p className='text-xl text-center pt-5'>Tell me what you want to sell</p>
           <form onSubmit={handleSubmit(handleAddService)}>

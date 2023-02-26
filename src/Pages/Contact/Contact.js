@@ -26,17 +26,17 @@ const Contact = () => {
       };
     return (
     
-        <div className='   flex justify-center items-center max-h-xs'>
-           <div className='w-96  p-7'>
-            <h1 className='font-bold text-2xl text-black text-center'>contact us</h1>
+        <div className=' h-[800px]  flex justify-center items-center max-h-xs'>
+           <div className='w-96 bg-[#f8ecef] rounded-lg p-7'>
+            <h1 className='font-bold text-4xl text-black text-center'>contact us</h1>
            <form ref={form} onSubmit={sendEmail}>
       <label>Name</label>
-      <input className="input input-bordered w-full max-w-xs" type="text" name="user_name" />
+      <input className="input input-bordered w-full max-w-xs" type="text" name="user_name" required />
       <label>Email</label>
-      <input className="input input-bordered w-full max-w-xs" type="email" name="user_email" />
+      <input className="input input-bordered w-full max-w-xs" type="email" name="user_email" required />
       <label>Message</label>
       <textarea className="input input-bordered w-full max-w-xs" name="message" />
-      <input  className="btn btn-accent text-white bg-[#125294] w-full mt-5" type="submit" value="Send" />
+      <input  className="btn btn-accent text-white bg-[#125294] w-full mt-5" type="submit" required value="Send" />
     </form> 
 
            </div>

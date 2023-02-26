@@ -69,7 +69,7 @@ const  authInfo = {
     logOut,
     updateUser,
     loading,
-    googleSign
+    googleSign,setLoading
 
               
 
