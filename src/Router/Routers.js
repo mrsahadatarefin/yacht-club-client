@@ -1,6 +1,13 @@
+import About from "../Pages/AboutUs/About";
+import AddService from "../Pages/AddService/AddService";
+import Contact from "../Pages/Contact/Contact";
 import Home from "../Pages/Home/Home";
+import Services from "../Pages/Home/Services/Services";
+import Login from "../Pages/Login/Login";
 import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
+import SignUp from "../Pages/SignUp/SignUp";
 import YachtServices from "../Pages/YachtServices/YachtServices";
+import PrivateRoute from "./PrivateRoute/PrivateRoute";
 
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -20,6 +27,33 @@ export const router = createBrowserRouter([
         loader:({params}) => fetch(`http://localhost:5000/service/${params.id}`),
          element:<ServiceDetails></ServiceDetails>
     },
+    {
+      path:'/login',
+      element:<Login></Login>,
+
+    },
+  
+    {
+      path:'/signup',
+      element:<SignUp></SignUp>,
+
+    },
+    {
+      path:'/addService',
+      element:<PrivateRoute><AddService></AddService></PrivateRoute>
+    },
+    
+    {
+      path:'/contact',
+      element:<Contact></Contact>
+    },
+    {
+      path:'/aboutUs',
+      element:<About></About>
+    },
+
+    
+    
   
   
   

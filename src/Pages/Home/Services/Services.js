@@ -11,12 +11,12 @@ const Services = () => {
   }, []);
 
   return (
-    <div>
-      <div className="  grid grid-cols-1  justify-items-center  mt-20 ">
+    <div className=" max-w-[1440px] m-auto">
+      <div className="     grid gap-5 grid-cols-1  justify-items-center  mt-20 ">
         <h1 className="text-black-700 text-6xl font-bold text-center"> Yacht Club services</h1>
         <br />
 
-        <p className="text-xl text-[#cebd88] font-semibold text-center">
+        <p className="text-xl text-[#125294] font-semibold text-center">
           “Our mission is to provide our guests with exceptional and memorable <br />
           yacht experiences in Dubai by offering a diverse fleet of luxury
          ”
@@ -28,7 +28,7 @@ const Services = () => {
 
       </div>
       <div className="mt-10  grid  justify-items-center">
-        <Link to='/services'><button className="btn btn-wide bg-[#cebd88] text-white">Show More </button></Link> 
+        <Link to='/services'><button className="btn btn-wide bg-[#125294] text-white">Show More </button></Link> 
       </div>
     </div>
   );

@@ -41,12 +41,12 @@ const Upcomming = () => {
 
 ]
     return (
-        <div className='mt-20'>
+        <div className='mt-20   max-w-[1440px] m-auto  '>
             <div className='grid gap-5'>
-                <h1 className='text-[#cebd88] italic text-xl font-semibold text-center '>Travel with us</h1>
-                <p className='text-5xl text-black-700 font-bold text-center '>Upcoming routes</p>
+                <h1 className='text-[#125294] italic text-xl font-semibold text-center '>Travel with us</h1>
+                <p className='text-4xl text-black-700 font-bold text-center '>Upcoming routes</p>
             </div>
-            <div className='grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-10'>
+            <div className='grid gap-5 grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-2 mt-10 bg-sky-100'>
     {
         upcomingRoute.map(up =><UpComing key={up.price} up={up}></UpComing>  )
     }

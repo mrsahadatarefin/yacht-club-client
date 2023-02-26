@@ -14,9 +14,17 @@ const YachtService = ({service}) => {
          <div className="card-body">
            <h2 className="card-title font-bold">{yacht_name}</h2>
            <p>{description.slice(0,100)}.....</p>
-           <p className='text-xl  '> <span className='font-bold '>Price:</span>{price} <span className='text-[#cebd88]'>$</span></p>
-           <div className="card-actions justify-end">
-              <Link to={`/services/details/${_id}`}><button className=" btn glass bg-[#cebd88] text-black"> details</button></Link>
+           <p className='text-xl  '> <span className='font-bold '>Price:</span>{price} <span className='text-[#125294]'>$</span></p>
+           <div className="card-actions justify-between ">
+           <div className="rating p-3">
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400"  />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked/>
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+</div>
+             
+              <Link to={`/services/details/${_id}`}><button className=" btn glass bg-[#125294] text-black"> details</button></Link>
            </div>
          </div>
        </div>

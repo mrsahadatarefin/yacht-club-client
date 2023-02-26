@@ -31,8 +31,8 @@ const Teams = () => {
 ] 
 
     return (
-        <div className='mt-20'>
-            <div> <p className='text-xl font-bold text-center italic text-[#cebd88]'>sailors</p>
+        <div className=' max-w-[1440px]  m-auto mt-20'>
+            <div> <p className='text-xl font-bold text-center italic text-[#125294]'>sailors</p>
                 <h1 className='text-6xl font-bold text-center'>Meet our team</h1>
                 
             </div>

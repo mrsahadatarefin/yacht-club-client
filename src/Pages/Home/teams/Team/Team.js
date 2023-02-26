@@ -13,7 +13,7 @@ const {img,name, rank}= te
         </PhotoProvider>
          <div className="card-body  ">
            <h2 className="card-title font-bold text-center">{name}</h2>
-           <p className='text-[#cebd88]'>{rank}</p>
+           <p className='text-[#125294]'>{rank}</p>
            <div>
            
            <div>
