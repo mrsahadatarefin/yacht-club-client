@@ -11,25 +11,69 @@ const AddService = () => {
     
 const handleAddService = data =>{
    
-
+console.log(data)
 
 const image = data.image[0];
 const formData = new FormData();
 formData.append('image', image);
- const url = 'https://api.imgbb.com/1/upload?expiration=600&key=aa28514066e54d1a382e1e6e77dc0b55}';
+ const url = 'https://api.imgbb.com/1/upload?expiration=60000&key=33d719a9ca8e9fdb243b89322f5935c9';
 fetch(url,{
     method:'POST',
     body:formData
 })
 .then(res => res.json())
 .then(imageData => {
-    console.log(imageData)})
+    
+  if(imageData.success){
+
+
+
+    const addService = {
+
+      yacht_name :data.service,
+      price:data.price,
+      Capacity:data.Capacity,
+      Water_area:data.WaterArea,
+      Point_of_departure:data.PointOfDeparture,
+      description:data.description,
+      img:imageData.data.url
+
+    }
+
+ fetch('https://yacht-club-server.vercel.app/service',{
+
+ method:'POST',
+ headers: {
+     "Content-Type": "application/json",
+   },
+   body: JSON.stringify(addService),
+ 
+ })
+ .then((response) => response.json())
+  .then((data) => {
+    console.log("Success:", data);
+    if(data.acknowledged === true ){
+        alert(' service add successfully')
+      
+    }
+    
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+  });
+
+  }
+
+    
+ 
+  
+  })
 
 }
 
     return (
         
-        <div className="  flex justify-center items-center">
+        <div className="  mt-20 flex justify-center items-center">
         <div className="w-96 bg-[#f8ecef] rounded-lg p-7">
           <h2 className="text-5xl text-center pt-20 font-bold">Add service</h2>
           <p className='text-xl text-center pt-5'>Tell me what you want to sell</p>
@@ -151,7 +195,7 @@ fetch(url,{
             
   
             <input
-              className="btn btn-accent w-full mt-5 "
+              className="btn btn-accent bg-[#125294] text-white w-full mt-5 "
               value="submit"
               type="submit"
             />

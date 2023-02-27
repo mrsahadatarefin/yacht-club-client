@@ -5,7 +5,7 @@ import Service from "./service/Service";
 const Services = () => {
   const [yachtData, setYachtData] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/service")
+    fetch("https://yacht-club-server.vercel.app/service")
       .then((res) => res.json())
       .then((data) => setYachtData(data));
   }, []);

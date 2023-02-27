@@ -2,9 +2,10 @@ import React, { useRef } from 'react';
 
 
 import emailjs from '@emailjs/browser';
+import useTitle from '../Hooks/useTitle';
 
 const Contact = () => {
-
+    useTitle('contact')
     const form = useRef();
 
     const sendEmail = (e) => {

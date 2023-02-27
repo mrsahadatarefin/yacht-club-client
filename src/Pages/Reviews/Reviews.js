@@ -17,7 +17,7 @@ const Reviews = () => {
        
     }
     console.log(review)
-    fetch('http://localhost:5000/reviews',{
+    fetch('https://yacht-club-server.vercel.app/reviews',{
         method:'POST',
         headers: {
             "Content-Type": "application/json",

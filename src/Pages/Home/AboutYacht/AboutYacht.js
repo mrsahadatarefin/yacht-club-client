@@ -1,5 +1,7 @@
 import React from "react";
+import { PhotoProvider, PhotoView } from "react-photo-view";
 import img from '../../../assets/banner-2/image-about.jpg'
+
 
 
 const AboutYacht = () => {
@@ -22,7 +24,12 @@ const AboutYacht = () => {
         </p>
       </div>
       <div>
-        <img src={img} className='w-[400px] bg-black' alt="" />
+      <PhotoProvider>
+    <PhotoView  src={img}>
+    <img src={img} className='w-[400px] bg-black' alt="" />
+    </PhotoView>
+ </PhotoProvider>
+       
       </div>
       
     </div>

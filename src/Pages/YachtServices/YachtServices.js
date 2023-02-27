@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import useTitle from '../Hooks/useTitle';
 import YachtService from './Yachtservice/YachtService';
 
 const YachtServices = () => {
+  useTitle('service')
     const [yachtData, setYachtData] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/service")
+    fetch("https://yacht-club-server.vercel.app/service")
       .then((res) => res.json())
       .then((data) => setYachtData(data));
   }, []);
