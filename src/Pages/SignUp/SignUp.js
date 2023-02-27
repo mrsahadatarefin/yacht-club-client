@@ -3,9 +3,11 @@ import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/ContextProvider/ContextProvider';
+import useTitle from '../Hooks/useTitle';
 
 const SignUp = () => {
     const [signupError, SetSingUpError] = useState("");
+    useTitle('singUp')
     const provider = new GoogleAuthProvider();
     const { handleSubmit, register,formState:{errors} } = useForm();
     const {createUser,updateUser,  googleSign} = useContext(AuthContext)
