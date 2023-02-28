@@ -1,4 +1,5 @@
 import React from 'react';
+import ClientSay from '../ClientSay/ClientSay';
 import useTitle from '../Hooks/useTitle';
 import AboutYacht from './AboutYacht/AboutYacht';
 
@@ -25,6 +26,7 @@ const Home = () => {
            <Logos></Logos>
            
            <Teams></Teams>
+           <ClientSay></ClientSay>
            <Testimonial></Testimonial>
           
         </div>

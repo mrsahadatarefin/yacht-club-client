@@ -1,13 +1,14 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 
-import "swiper/css/effect-coverflow";
+// Import Swiper styles
+import "swiper/css";
 import "swiper/css/pagination";
 
- 
-// import "./styles.css";
-import { EffectCoverflow, Pagination } from "swiper";
+
+
+// import required modules
+import { Pagination } from "swiper";
 
 
 import img1 from '../../../assets/Featured Yachts/img-1.jpg'
@@ -55,50 +56,43 @@ const featuredYachts=[
 ]
 
     return (
-        <div className='max-w-[1100px]  m-auto mt-20'>
+        <div className=' max-w-[1440px] m-auto mt-20'>
         <div className=' '>
             
             <p className='text-4xl text-black-700 font-bold text-center text-[#125294]  italic font-semibold '>Explore Our Trended & Featured Yachts</p>
         </div>
-        <div className='mt-20'>
+        <div className='mt-20   '>
 
         <>
-        <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
+      <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
         }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[Pagination]}
         className="mySwiper"
       >
-
        
-{
-    featuredYachts.map(ya => <>
-    <SwiperSlide> 
+       
+       {
+        featuredYachts.map(client=><>
+         <SwiperSlide>
+
+ 
+
+
+<img src={client.img} alt=''  />
+<h1 className='text-xl'>{client.clientSAY}</h1>
+
+<p className='text-2xl font-bold italic'>{client.name}</p>
+
+
+         </SwiperSlide>
         
-        <img src={ya.img} alt="" srcset="" />
-        <h1 className='text-3xl font-bold italic'>{ya.name}</h1>
-        <p className='text-xl font-bold text-[#125294] uppercase'>$ {ya.price}</p>
-    
-    
-    </SwiperSlide>
-    
-    </>)
-}
+        </>)
+       }
         
-
-      
-
-
       </Swiper>
     </>
       
