@@ -7,6 +7,7 @@ import Logos from './logos/Logos';
 
 import Services from './Services/Services';
 import Teams from './teams/Teams';
+import Testimonial from './testimonial/Testimonial';
 
 import Upcomming from './Upcomming/Upcomming';
 import WeOffer from './WeOffer/WeOffer';
@@ -24,6 +25,7 @@ const Home = () => {
            <Logos></Logos>
            
            <Teams></Teams>
+           <Testimonial></Testimonial>
           
         </div>
     );

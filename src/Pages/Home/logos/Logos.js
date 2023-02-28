@@ -24,7 +24,7 @@ const Logos = () => {
            {
            logos.map(logo => <>
 
-           <img src={logo.img} alt="" />
+           <img src={logo.img} alt="" className='transition ease-in-out delay-100 bg-white-500 hover:-translate-y-1 hover:scale-110 hover:text-[#e0f2fe] duration-300 ...' />
            </>  )
            } 
         </div>

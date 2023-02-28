@@ -8,7 +8,7 @@ const AboutYacht = () => {
 
     
   return (
-    <div className=" max-w-[1440px]  m-auto grid grid-cols-1 justify-items-center lg:grid-cols-2  mt-10 p-10 bg-sky-100 rounded-md ">
+    <div className=" max-w-[1440px]  m-auto grid grid-cols-1 justify-items-center lg:grid-cols-2  mt-10 p-10 bg-sky-100 rounded-md transition ease-in-out delay-75 bg-white-500 hover:-translate-y-1 hover:scale-110 hover:bg-white duration-300 ... ">
       <div className=" w-full  ">
         <h1 className="text-3xl font-bold text-center ">The cruising experience in Cyprus</h1>
         <p className="text-xl pt-10 text-center">

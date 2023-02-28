@@ -34,7 +34,7 @@ const Blog = () => {
            ”
           </p>
         </div>
-        <div className=" grid gap-20 justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">
+        <div className=" grid gap-20 justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-10">
         
          {
              blogData.map(blog =><SingleBlog key={blog.name} blog={blog}></SingleBlog>)
@@ -42,7 +42,7 @@ const Blog = () => {
   
         </div>
         <div className="mt-10  grid  justify-items-center">
-          <Link ><button className="btn btn-wide bg-[#125294] text-white">Show More </button></Link> 
+          <Link to=''><button className="btn btn-wide bg-[#125294] text-white">Show More </button></Link> 
         </div>
       </div>
     );

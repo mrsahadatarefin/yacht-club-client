@@ -35,7 +35,7 @@ const WeOffer = () => {
                 
                 <p className='text-4xl text-black-700 font-bold text-center text-[#125294]  italic font-semibold '>What We Offer</p>
             </div>
-            <div className='grid gap-5 grid-cols-1 lg:grid-cols-4 md:grid-cols-2 mt-10 justify-items-center '>
+            <div className='grid gap-5 grid-cols-1 lg:grid-cols-4 md:grid-cols-2 mt-10 justify-items-center   '>
 
 
            {

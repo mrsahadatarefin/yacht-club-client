@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 const Service = ({service}) => {
     const{img,yacht_name,description,price,Capacity,Water_area,_id}= service
     return (
-        <div className=" w-96 bg-base-100 shadow-xl">
+        <div className=" w-96 bg-base-100 shadow-xl  ">
  <PhotoProvider>
     <PhotoView  src={img}>
-    <img src={img} className='h-[260px] w-full p-5 ' alt="Shoes" />
+    <img src={img} className='h-[260px] w-full p-5  ' alt="Shoes" />
     </PhotoView>
  </PhotoProvider>
   <div className="card-body">

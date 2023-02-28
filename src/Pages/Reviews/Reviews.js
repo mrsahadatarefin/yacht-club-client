@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Context/ContextProvider/ContextProvider';
 
 const Reviews = () => {
@@ -49,7 +50,7 @@ const Reviews = () => {
       <textarea className="input input-bordered w-full max-w-xs h-20 " name="message" required />
      {
         user?.email? <input  className="btn btn-accent text-white bg-[#125294] w-full mt-5" type="submit" value="Add review"  />:
-        <input  className="btn btn-accent text-black bg-[#125294] w-full mt-5" type="submit" value="Please go to login" disabled />
+       <Link to='/login'> <input  className="btn btn-accent  text-white text-black bg-[#125294] w-full mt-5" type="submit" value="Please  login"  /></Link>
      }
     </form> 
 
