@@ -30,10 +30,10 @@ const WeOffer = () => {
         },
     ]
     return (
-        <div className='max-w-[1440px]  m-auto mt-20'>
+        <div className='max-w-[1440px]  m-auto mt-20 animate-fade-up animate-duration-1000 animate-ease-in-out '>
             <div className='grid gap-5'>
                 
-                <p className='text-4xl text-black-700 font-bold text-center text-[#125294]  italic font-semibold '>What We Offer</p>
+                <p className='text-4xl text-black-700 font-bold text-center text-[#125294]  italic '>What We Offer</p>
             </div>
             <div className='grid gap-5 grid-cols-1 lg:grid-cols-4 md:grid-cols-2 mt-10 justify-items-center   '>
 

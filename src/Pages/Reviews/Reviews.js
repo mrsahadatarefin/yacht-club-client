@@ -50,7 +50,7 @@ const Reviews = () => {
       <textarea className="input input-bordered w-full max-w-xs h-20 " name="message" required />
      {
         user?.email? <input  className="btn btn-accent text-white bg-[#125294] w-full mt-5" type="submit" value="Add review"  />:
-       <Link to='/login'> <input  className="btn btn-accent  text-white text-black bg-[#125294] w-full mt-5" type="submit" value="Please  login"  /></Link>
+       <Link to='/login'> <input  className="btn btn-accent  text-white text-black bg-[#125294] w-full mt-5" type="submit" value="Review"  /></Link>
      }
     </form> 
 
