@@ -12,6 +12,7 @@ import Testimonial from './testimonial/Testimonial';
 
 import Upcomming from './Upcomming/Upcomming';
 import WeOffer from './WeOffer/WeOffer';
+import HomeBloges from './HomeBloges';
 
 const Home = () => {
   useTitle('Home')
@@ -28,7 +29,7 @@ const Home = () => {
            <Teams></Teams>
            <ClientSay></ClientSay>
            <Testimonial></Testimonial>
-          
+           <HomeBloges></HomeBloges>
         </div>
     );
 };

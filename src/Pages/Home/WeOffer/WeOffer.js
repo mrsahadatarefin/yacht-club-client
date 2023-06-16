@@ -4,6 +4,10 @@ import img2 from '../../../assets/offers/img2.svg'
 import img3 from '../../../assets/offers/img-3.svg'
 import img4 from '../../../assets/offers/img-4.svg'
 import Offer from './Offer';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const WeOffer = () => {
 
@@ -21,12 +25,12 @@ const WeOffer = () => {
         {
             img:img3,
             name:'Enjoy',
-            title:'Globalia Yachting delivers a dreamy sailing holiday in Cyprus on a bareboat yacht charter.'
+            title:'delivers a dreamy sailing holiday in Cyprus on a bareboat yacht charter.'
         },
         {
             img:img4,
             name:'Special Events',
-            title:'Globalia Yachting delivers a dreamy sailing holiday in Cyprus on a bareboat yacht charter.'
+            title:' Yachting delivers a dreamy sailing holiday in Cyprus on a bareboat yacht charter.'
         },
     ]
     return (
@@ -35,7 +39,7 @@ const WeOffer = () => {
                 
                 <p className='text-4xl text-black-700 font-bold text-center text-[#125294]  italic '>What We Offer</p>
             </div>
-            <div className='grid gap-5 grid-cols-1 lg:grid-cols-4 md:grid-cols-2 mt-10 justify-items-center   '>
+            <div data-aos="zoom-out-down" data-aos-duration="2000" className='grid gap-5 grid-cols-1 lg:grid-cols-4 md:grid-cols-2 mt-10 justify-items-center   '>
 
 
            {

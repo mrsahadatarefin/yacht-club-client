@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Service from "./service/Service";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const Services = () => {
   const [yachtData, setYachtData] = useState([]);
@@ -22,7 +26,7 @@ const Services = () => {
          ”
         </p>
       </div>
-      <div className=" grid gap-20 justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">
+      <div data-aos-duration="1000" data-aos="zoom-in-left" className=" grid gap-20 justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">
       
        {yachtData.map(service => <Service key={service._id} service={service} ></Service>).slice(0,3)}
 

@@ -16,7 +16,7 @@ const Service = ({service}) => {
     <h2 className="card-title font-bold">{yacht_name}</h2>
     <div className="divider "></div> 
     <p>{description.slice(0,100)}.....</p>
-    <p className='text-xl  '> <span className='font-bold '>Price:</span>{price} <span className='text-[#125294]'>$</span></p>
+    <p className='text-xl  '> <span className='font-bold '>Price:</span>{price} <span className='text-black'>$</span></p>
    
     <div className="card-actions justify-between">
     <div className="rating p-3">
